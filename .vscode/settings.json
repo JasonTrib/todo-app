@@ -1,0 +1,29 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": null,
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true,
+    "source.fixAll.stylelint": true,
+    "source.fixAll.eslint": true,
+  },
+  "eslint.format.enable": true,
+  "prettier.configPath": ".prettierrc.mjs",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.jsx": "${capture}.js, ${capture}.css, ${capture}.scss",
+    "*.tsx": "${capture}.ts, ${capture}.css, ${capture}.scss",
+    "*.css": "${capture}.css.map",
+    "*.scss": "$(capture).css",
+    ".prettierrc.*": ".prettierignore"
+  },
+}

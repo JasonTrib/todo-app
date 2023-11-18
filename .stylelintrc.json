@@ -17,6 +17,14 @@
             "rules",
             "at-rules"
         ],
-        "order/properties-alphabetical-order": true
+        "order/properties-alphabetical-order": true,
+        "at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": [
+                    "tailwind"
+                ]
+            }
+        ]
     }
 }

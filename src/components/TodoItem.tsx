@@ -23,8 +23,8 @@ const TodoItem: FC<TodoItem> = ({ todo }) => {
       <div className="flex h-8 w-full gap-x-2">
         <div
           className={`flex flex-grow cursor-pointer items-center rounded px-1 text-left selection:bg-transparent ${
-            todo.done ? 'bg-green-400' : 'bg-slate-300'
-          } ${todo.done ? 'line-through' : ''}`}
+            todo.done ? 'bg-green-400 line-through hover:bg-green-300' : 'bg-slate-300 hover:bg-slate-200'
+          }`}
           onClick={() => handleToggleTodo(todo.id)}
         >
           {todo.content}

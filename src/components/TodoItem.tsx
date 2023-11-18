@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { useTodoStore, type Todo } from '../store';
+import { useTodoStore } from '../store/store';
+import { Todo } from '../store/store.types';
 
 type TodoItem = {
   todo: Todo;

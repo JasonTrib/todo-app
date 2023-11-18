@@ -1,5 +1,5 @@
 import { FC, useRef } from 'react';
-import { useTodoStore } from '../store';
+import { useTodoStore } from '../store/store';
 
 const Toolbar: FC<object> = () => {
   const addTodo = useTodoStore((state) => state.addTodo);

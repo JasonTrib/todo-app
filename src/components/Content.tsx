@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useTodoStore } from '../store';
+import { useTodoStore } from '../store/store';
 import TodoItem from './TodoItem';
 
 const Content: FC<object> = () => {

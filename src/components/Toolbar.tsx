@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useTodoStore } from '../store/store';
 
 const Toolbar: FC<object> = () => {
@@ -8,7 +9,7 @@ const Toolbar: FC<object> = () => {
 
   const handleAddTodo = () => {
     if (inputValue) {
-      addTodo({ id: crypto.randomUUID(), content: inputValue || '', done: false });
+      addTodo({ id: uuidv4(), content: inputValue || '', done: false });
       setInputValue('');
     }
   };

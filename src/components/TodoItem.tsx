@@ -22,15 +22,15 @@ const TodoItem: FC<TodoItem> = ({ todo }) => {
     <li className="">
       <div className="flex h-8 w-full gap-x-2">
         <div
-          className={`flex flex-grow cursor-pointer items-center rounded px-1 text-left selection:bg-transparent ${
+          className={`flex flex-grow cursor-pointer items-center overflow-hidden overflow-ellipsis rounded px-1 text-left ${
             todo.done ? 'bg-green-400 line-through hover:bg-green-300' : 'bg-slate-300 hover:bg-slate-200'
           }`}
           onClick={() => handleToggleTodo(todo.id)}
         >
-          {todo.content}
+          <div className="overflow-hidden overflow-ellipsis whitespace-nowrap">{todo.content}</div>
         </div>
         <div
-          className="flex w-8 cursor-pointer items-center justify-center rounded bg-red-900 hover:bg-red-700"
+          className="flex shrink-0 basis-8 cursor-pointer items-center justify-center rounded bg-red-900 hover:bg-red-700"
           onClick={() => handleRemoveTodo(todo.id)}
         >
           ❌

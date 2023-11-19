@@ -18,6 +18,7 @@ const Toolbar: FC<object> = () => {
     <div className="flex h-10 gap-x-2">
       <input
         className="w-full rounded bg-slate-300 px-2 outline-none hover:bg-slate-200 focus:bg-slate-100"
+        placeholder="todo..."
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />

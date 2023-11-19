@@ -7,7 +7,7 @@ type ContainerProps = {
 };
 
 const Container = ({ children }: ContainerProps) => {
-  return <div className="flex w-96 flex-col gap-y-4 rounded bg-slate-700 p-3">{children}</div>;
+  return <div className="flex w-screen max-w-lg flex-col gap-y-4 rounded bg-slate-700 p-3">{children}</div>;
 };
 
 Container.Toolbar = Toolbar;

@@ -4,9 +4,14 @@ export type Todo = {
   done: boolean;
 };
 
-export type StoreT = {
+export type State = {
   todos: Todo[];
+};
+
+export type Actions = {
   addTodo: (todo: Todo) => void;
   toggleTodo: (id: Todo['id']) => void;
   removeTodo: (id: Todo['id']) => void;
 };
+
+export type Store = State & Actions;
